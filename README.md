@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I'm currently working on torrime project with group of friends.<br>👯 I'm looking to collaborate on react projects to learn new experience and meet new friends.<br>⚡ I'm currently learning nest js, three js, framer motion<br>
+🔭 I'm currently working on toriime project with group of friends.<br>👯 I'm looking to collaborate on react projects to learn new experience and meet new friends.<br>⚡ I'm currently learning nest js, three js, framer motion<br>
 
 
 ## 🌐 Socials:
