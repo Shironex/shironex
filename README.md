@@ -51,7 +51,12 @@
 
   <p>
     <a href="https://github.com/Shironex/omniscribe" target="_blank"><b>Omniscribe</b></a><br/>
-    Terminal-first CLI tool for my daily workflow (fast, opinionated, and scriptable).
+    Desktop app for running and managing multiple AI coding assistant sessions in parallel (up to 12), with per-session terminals, git worktrees, and MCP configs.
+  </p>
+
+  <p>
+    <a href="https://github.com/Shironex/gitchorus" target="_blank"><b>GitChorus</b></a> <i>(prototype)</i><br/>
+    Desktop app for AI-powered issue validation and PR reviews on local GitHub repos, with evidence-backed findings and one-click publishing.
   </p>
 </div>
 
