@@ -87,6 +87,9 @@
   <a href="mailto:support@taketach.pl" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Email&logo=gmail&label=&color=ea4335&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="email badge" />
   </a>
+  <a href="https://shirone.blog" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Blog&logo=hashnode&label=&color=F77E1F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="blog badge" />
+  </a>
 </div>
 
 ###
