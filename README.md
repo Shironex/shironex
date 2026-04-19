@@ -58,7 +58,11 @@
     <a href="https://github.com/Shironex/shiroani" target="_blank"><b>ShiroAni</b></a> — <a href="https://shiroani.app" target="_blank">shiroani.app</a><br/>
     Personal anime browser and tracker — search, track, and organize your watchlist.
   </p>
-
+  <p>
+    <a href="https://github.com/Shironex/kirei-manga" target="_blank"><b>Kirei Manga</b></a> — <a href="https://kireimanga.app" target="_blank">kireimanga.app</a><br/>
+    Personal manga reader and tracker — read, track, and organize your manga library (local files + MangaDex).
+  </p>
+  
   <p>
     <a href="https://github.com/Shironex/shiranami" target="_blank"><b>Shiranami</b></a> — <a href="https://shiranami.app" target="_blank">shiranami.app</a><br/>
     A local-first music player for your own library — like Spotify, but for files you already have.
