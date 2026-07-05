@@ -58,10 +58,6 @@
     <a href="https://github.com/Shironex/shiroani" target="_blank"><b>ShiroAni</b></a> — <a href="https://shiroani.app" target="_blank">shiroani.app</a><br/>
     Personal anime browser and tracker — search, track, and organize your watchlist.
   </p>
-  <p>
-    <a href="https://github.com/Shironex/kirei-manga" target="_blank"><b>Kirei Manga</b></a> — <a href="https://kireimanga.app" target="_blank">kireimanga.app</a><br/>
-    Personal manga reader and tracker — read, track, and organize your manga library (local files + MangaDex).
-  </p>
   
   <p>
     <a href="https://github.com/Shironex/shiranami" target="_blank"><b>Shiranami</b></a> — <a href="https://shiranami.app" target="_blank">shiranami.app</a><br/>
@@ -71,14 +67,6 @@
   <p>
     <a href="https://github.com/Shironex/gitchorus" target="_blank"><b>GitChorus</b></a> <i>(discontinued)</i><br/>
     Desktop app for AI-powered issue validation and PR reviews. Paused due to unclear Anthropic SDK licensing terms for Max plan users.
-  </p>
-</div>
-
-<h3 align="left">Currently building</h3>
-
-<div align="left">
-  <p>
-    Finishing up ShiroAni and Shiranami, and setting up a Discord community for sharing free personal-use tools, collecting feedback, and collaborating on projects that fill gaps left by overpriced or nonexistent alternatives. Also working on <b>Kodama</b> (a game — <i>restore the echoes of a silent world</i>) and <b>Shiroku</b> (a local-first notes and planner app) — both coming soon.
   </p>
 </div>
 
