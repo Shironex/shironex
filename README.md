@@ -39,9 +39,9 @@ My portfolio as a desktop OS in the browser — draggable windows, ⌘K command 
 
 ### Recent writing — [shirone.blog](https://shirone.blog)
 
-- [Taming 12 Terminals: How We Stopped the UI from Freezing](https://shirone.blog/blog/terminal-performance-at-scale/)
+- [Taming 12 Terminals: How I Stopped the UI from Freezing](https://shirone.blog/blog/terminal-performance-at-scale/)
 - [The asar Trap: When Your AI Agent Works in Dev but Dies in Production](https://shirone.blog/blog/electron-asar-trap/)
-- [Your Electron App Is Leaking Secrets (and How We Fixed It)](https://shirone.blog/blog/electron-env-leaks/)
+- [Your Electron App Is Leaking Secrets (and How I Fixed It)](https://shirone.blog/blog/electron-env-leaks/)
 
 Field notes from building desktop apps and AI dev tooling — decisions, mistakes, and lessons learned in production. No tutorials.
 
