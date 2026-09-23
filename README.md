@@ -22,6 +22,13 @@
 Autonomous AI dev studio: describe a feature on a Kanban board, a Claude agent implements it in an isolated git worktree, you review the diff. Started for fun with a team of 4 — within a month it grew into something much bigger than we expected. I'm one of the core contributors: agent execution pipeline, server architecture, auth, Docker/CI, and day-to-day issue triage.
 <!-- TODO: demo GIF — kanban card → agent working → diff review -->
 
+**[noctcore/eslint-plugins](https://github.com/noctcore/eslint-plugins)** · [docs](https://noctcore.github.io/eslint-plugins/) · [npm](https://www.npmjs.com/org/noctcore)
+Guardrails for codebases where AI agents write a lot of the code. Nine `@noctcore/*` ESLint plugins for the bugs generic linters can't see (tenant-scope and transaction fences for Prisma, SSRF and open-redirect precision, fetch timeouts and AbortSignal forwarding, zod contract naming, decimal money, structured logging, React architecture), plus [`@noctcore/harness`](https://github.com/noctcore/nightcore/tree/main/packages/harness) for whole-repo invariants a single-file linter can't reach. Most rules started out inside an ERP I'm building and were promoted to a package only after they had caught something real.
+
+```sh
+pnpm add -D @noctcore/eslint-plugin-security @noctcore/eslint-plugin-async-safety @noctcore/eslint-plugin-prisma
+```
+
 **[Omniscribe](https://github.com/Shironex/omniscribe)**
 Desktop app that runs up to 12 parallel AI coding sessions — per-session PTY terminals, git worktrees, and MCP configs in one window. My daily driver.
 <!-- TODO: GIF — grid of parallel sessions -->
@@ -39,6 +46,7 @@ My portfolio as a desktop OS in the browser — draggable windows, ⌘K command 
 
 ### Recent writing — [shirone.blog](https://shirone.blog)
 
+- [Green Is Not Evidence: How I Keep AI-Written Code Honest](https://shirone.blog/blog/green-is-not-evidence/)
 - [Taming 12 Terminals: How I Stopped the UI from Freezing](https://shirone.blog/blog/terminal-performance-at-scale/)
 - [The asar Trap: When Your AI Agent Works in Dev but Dies in Production](https://shirone.blog/blog/electron-asar-trap/)
 - [Your Electron App Is Leaking Secrets (and How I Fixed It)](https://shirone.blog/blog/electron-env-leaks/)
