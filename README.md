@@ -1,88 +1,59 @@
-<h3 align="left">Hi, I'm Kacper 👋</h3>
+### Hi, I'm Kacper 👋
 
-<p align="left">
-  Full-stack developer from Poland, remote-first. I build complete products in TypeScript —
-  desktop apps with Electron, typed backends on Node and NestJS, Next.js on the web —
-  and I ship them properly: CI, releases, docs, and the details most people skip.
-</p>
+Full-stack developer from Poland, remote-first (CET). I build complete products in TypeScript and Rust:
+desktop apps with Tauri and Electron, end-to-end typesafe web apps with tRPC, Vite and TanStack, backends on Node and NestJS.
+I ship them properly: CI, tests, releases, docs, and upgrades users don't have to think about.
 
-<p align="left">
-  <b>Open to:</b> full-time roles (remote) · contracts &amp; MVPs<br/>
-  <b>Reach me:</b> <a href="mailto:support@shirone.dev">support@shirone.dev</a> ·
-  <a href="https://shirone.dev">shirone.dev</a> ·
-  <a href="https://shirone.blog">shirone.blog</a> ·
-  <a href="https://discordapp.com/users/705891140049829908">Discord</a>
-</p>
+**Open to:** full-time remote roles · contracts & MVPs  
+**Languages:** Polish (native) · English (C1)  
+**Reach me:** <support@shirone.dev> · [shirone.dev](https://shirone.dev) · [shirone.blog](https://shirone.blog) · [Discord](https://discordapp.com/users/705891140049829908)
 
 ---
 
 ### Featured work
 
-**[AutoMaker](https://github.com/AutoMaker-Org/automaker)** — ⭐ 3.2k
-Autonomous AI dev studio: describe a feature on a Kanban board, a Claude agent implements it in an isolated git worktree, you review the diff. Started for fun with a team of 4 — within a month it grew into something much bigger than we expected. I'm one of the core contributors: agent execution pipeline, server architecture, auth, Docker/CI, and day-to-day issue triage.
-<!-- TODO: demo GIF — kanban card → agent working → diff review -->
+**[AutoMaker](https://github.com/AutoMaker-Org/automaker)** · ⭐ 3.2k  
+Autonomous AI dev studio: describe a feature on a Kanban board, a Claude agent implements it in an isolated git worktree, you review the diff. Started for fun with a team of 4 and grew into something much bigger within a month. I was the #1 contributor: agent execution pipeline, server architecture, auth, Docker/CI, and day-to-day issue triage.
 
-**[noctcore/eslint-plugins](https://github.com/noctcore/eslint-plugins)** · [docs](https://noctcore.github.io/eslint-plugins/) · [npm](https://www.npmjs.com/org/noctcore)
-Guardrails for codebases where AI agents write a lot of the code. Nine `@noctcore/*` ESLint plugins for the bugs generic linters can't see (tenant-scope and transaction fences for Prisma, SSRF and open-redirect precision, fetch timeouts and AbortSignal forwarding, zod contract naming, decimal money, structured logging, React architecture), plus [`@noctcore/harness`](https://github.com/noctcore/nightcore/tree/main/packages/harness) for whole-repo invariants a single-file linter can't reach. Most rules started out inside an ERP I'm building and were promoted to a package only after they had caught something real.
+**Business ERP** · in progress, private  
+The project I'm putting everything I know into. A grant-funded ERP I've been building for several months on a deliberately boring, proven stack: tRPC for end-to-end type safety, Vite, the TanStack family, Prisma and PostgreSQL. Multi-tenant data model, audited writes, typed contracts from database to UI. It's also where most of my lint rules come from.
 
-```sh
+**[noctcore/eslint-plugins](https://github.com/noctcore/eslint-plugins)** · [docs](https://noctcore.github.io/eslint-plugins/) · [npm](https://www.npmjs.com/org/noctcore)  
+Guardrails for codebases where AI agents write a lot of the code. 13 packages with 110+ rules: ESLint plugins plus whole-repo rules for [`@noctcore/harness`](https://github.com/noctcore/nightcore/tree/main/packages/harness), catching what generic linters can't see: Prisma tenancy and transaction fences, SSRF and path traversal, fetch timeouts, structured logging, untrusted LLM output. Rules are promoted into a package only after they've caught something real, and every example in the docs runs in the test suite.
+
+```
 pnpm add -D @noctcore/eslint-plugin-security @noctcore/eslint-plugin-async-safety @noctcore/eslint-plugin-prisma
 ```
 
-**[Omniscribe](https://github.com/Shironex/omniscribe)**
-Desktop app that runs up to 12 parallel AI coding sessions — per-session PTY terminals, git worktrees, and MCP configs in one window. My daily driver.
-<!-- TODO: GIF — grid of parallel sessions -->
+**[Shiranami](https://github.com/Shironex/shiranami)** · [shiranami.app](https://shiranami.app)  
+Local-first music player for the files you already own. v2 is a ground-up rewrite from Electron to Rust + Tauri, shipped without stranding a single user's library: Windows installer 110 MB → 12.5 MB, idle RAM ~688 MB → ~291 MB, 189 ms cold boot, 1,500+ Rust tests. [How the rewrite went →](https://shirone.blog/blog/shiranami-v2-rust-rewrite/)
 
-**[Shiranami](https://github.com/Shironex/shiranami)** · [shiranami.app](https://shiranami.app)
-A softer place for your music library — local-first player for the files you already own.
+**[Omniscribe](https://github.com/Shironex/omniscribe)**  
+Runs up to 12 parallel AI coding sessions in one window, each with its own PTY terminal, git worktree, and MCP config. My daily driver.
 
-**[ShiroAni](https://github.com/Shironex/shiroani)** · [shiroani.app](https://shiroani.app)
-Personal anime browser and tracker.
+**[ShiroAni](https://github.com/Shironex/shiroani)** · [shiroani.app](https://shiroani.app)  
+Anime browser and tracker with a native C++ overlay.
 
-**[shirone.dev](https://shirone.dev)** · [source](https://github.com/Shironex/portfolio)
-My portfolio as a desktop OS in the browser — draggable windows, ⌘K command palette, focus traps, reduced-motion support, noscript fallback. Next.js 16 + Tailwind v4.
+**[shirone.dev](https://shirone.dev)** · [source](https://github.com/Shironex/portfolio)  
+My portfolio as a desktop OS in the browser: draggable windows, ⌘K command palette, focus traps, reduced-motion support, noscript fallback. Next.js 16 + Tailwind v4.
 
 ---
 
-### Recent writing — [shirone.blog](https://shirone.blog)
+### Recent writing · [shirone.blog](https://shirone.blog)
 
+- [Swapping the Engine Mid-Flight: Shiranami 2 and a 186k-Line Merge](https://shirone.blog/blog/shiranami-v2-rust-rewrite/)
 - [Green Is Not Evidence: How I Keep AI-Written Code Honest](https://shirone.blog/blog/green-is-not-evidence/)
 - [Taming 12 Terminals: How I Stopped the UI from Freezing](https://shirone.blog/blog/terminal-performance-at-scale/)
 - [The asar Trap: When Your AI Agent Works in Dev but Dies in Production](https://shirone.blog/blog/electron-asar-trap/)
-- [Your Electron App Is Leaking Secrets (and How I Fixed It)](https://shirone.blog/blog/electron-env-leaks/)
 
-Field notes from building desktop apps and AI dev tooling — decisions, mistakes, and lessons learned in production. No tutorials.
+Field notes from building desktop apps and AI dev tooling: decisions, mistakes, and lessons learned in production. No tutorials.
 
 ---
 
 ### Stack
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="typescript logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="30" alt="nextjs logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" height="30" alt="nestjs logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" alt="nodejs logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" height="30" alt="electron logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="30" alt="postgresql logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="30" alt="redis logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" alt="docker logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="30" alt="aws logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="30" alt="terraform logo" />
-</div>
+[![Stack](https://skillicons.dev/icons?i=ts,rust,tauri,react,vite,nextjs,nestjs,nodejs,bun,electron,postgres,redis,prisma,docker,linux)](https://skillicons.dev)
 
-<br/>
+**Also:** tRPC · TanStack libraries · Drizzle · SQLite · Vitest · Playwright
 
-<div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shironex&show_icons=true&include_all_commits=true&count_private=true&theme=dracula&hide_border=false" height="150" alt="GitHub stats" />
-</div>
+**Infrastructure:** self-hosting my own servers for 2+ years (Coolify across Hetzner and OVH, Cloudflare Tunnels, Tailscale, S3-compatible storage, DNS and mail). Previously AWS and Terraform.
