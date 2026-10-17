@@ -22,21 +22,21 @@ I ship them properly: CI, tests, releases, docs, and upgrades users don't have t
   <img src="assets/pixel/header-featured.gif" width="640" alt="Featured work">
 </p>
 
-<img align="left" hspace="12" src="assets/pixel/icon-automaker.gif" width="64" height="64" alt="">
+<img align="left" src="assets/pixel/icon-automaker.gif" width="80" height="64" alt="">
 
 **[AutoMaker](https://github.com/AutoMaker-Org/automaker)** · ⭐ 3.2k  
 Autonomous AI dev studio: describe a feature on a Kanban board, a Claude agent implements it in an isolated git worktree, you review the diff. Started for fun with a team of 4 and grew into something much bigger within a month. I was the #1 contributor: agent execution pipeline, server architecture, auth, Docker/CI, and day-to-day issue triage.
 
 <br clear="left">
 
-<img align="left" hspace="12" src="assets/pixel/icon-erp.gif" width="64" height="64" alt="">
+<img align="left" src="assets/pixel/icon-erp.gif" width="80" height="64" alt="">
 
 **Business ERP** · in progress, private  
 The project I'm putting everything I know into. A grant-funded ERP I've been building for several months on a deliberately boring, proven stack: tRPC for end-to-end type safety, Vite, the TanStack family, Prisma and PostgreSQL. Multi-tenant data model, audited writes, typed contracts from database to UI. It's also where most of my lint rules come from.
 
 <br clear="left">
 
-<img align="left" hspace="12" src="assets/pixel/icon-noctcore.gif" width="64" height="64" alt="">
+<img align="left" src="assets/pixel/icon-noctcore.gif" width="80" height="64" alt="">
 
 **[noctcore/eslint-plugins](https://github.com/noctcore/eslint-plugins)** · [docs](https://noctcore.github.io/eslint-plugins/) · [npm](https://www.npmjs.com/org/noctcore)  
 Guardrails for codebases where AI agents write a lot of the code. 13 packages with 110+ rules: ESLint plugins plus whole-repo rules for [`@noctcore/harness`](https://github.com/noctcore/nightcore/tree/main/packages/harness), catching what generic linters can't see: Prisma tenancy and transaction fences, SSRF and path traversal, fetch timeouts, structured logging, untrusted LLM output. Rules are promoted into a package only after they've caught something real, and every example in the docs runs in the test suite.
@@ -47,28 +47,28 @@ Guardrails for codebases where AI agents write a lot of the code. 13 packages wi
 pnpm add -D @noctcore/eslint-plugin-security @noctcore/eslint-plugin-async-safety @noctcore/eslint-plugin-prisma
 ```
 
-<img align="left" hspace="12" src="assets/pixel/icon-shiranami.gif" width="64" height="64" alt="">
+<img align="left" src="assets/pixel/icon-shiranami.gif" width="80" height="64" alt="">
 
 **[Shiranami](https://github.com/Shironex/shiranami)** · [shiranami.app](https://shiranami.app)  
 Local-first music player for the files you already own. v2 is a ground-up rewrite from Electron to Rust + Tauri, shipped without stranding a single user's library: Windows installer 110 MB → 12.5 MB, idle RAM ~688 MB → ~291 MB, 189 ms cold boot, 1,500+ Rust tests. [How the rewrite went →](https://shirone.blog/blog/shiranami-v2-rust-rewrite/)
 
 <br clear="left">
 
-<img align="left" hspace="12" src="assets/pixel/icon-omniscribe.gif" width="64" height="64" alt="">
+<img align="left" src="assets/pixel/icon-omniscribe.gif" width="80" height="64" alt="">
 
 **[Omniscribe](https://github.com/Shironex/omniscribe)**  
 Runs up to 12 parallel AI coding sessions in one window, each with its own PTY terminal, git worktree, and MCP config. My daily driver.
 
 <br clear="left">
 
-<img align="left" hspace="12" src="assets/pixel/icon-shiroani.gif" width="64" height="64" alt="">
+<img align="left" src="assets/pixel/icon-shiroani.gif" width="80" height="64" alt="">
 
 **[ShiroAni](https://github.com/Shironex/shiroani)** · [shiroani.app](https://shiroani.app)  
 Anime browser and tracker with a native C++ overlay.
 
 <br clear="left">
 
-<img align="left" hspace="12" src="assets/pixel/icon-shironedev.gif" width="64" height="64" alt="">
+<img align="left" src="assets/pixel/icon-shironedev.gif" width="80" height="64" alt="">
 
 **[shirone.dev](https://shirone.dev)** · [source](https://github.com/Shironex/portfolio)  
 My portfolio as a desktop OS in the browser: draggable windows, ⌘K command palette, focus traps, reduced-motion support, noscript fallback. Next.js 16 + Tailwind v4.
