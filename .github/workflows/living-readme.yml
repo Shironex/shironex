@@ -1,0 +1,78 @@
+name: living readme
+
+on:
+  schedule:
+    # Hourly, away from the top of the hour, when scheduled runs queue up.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: living-readme
+  cancel-in-progress: false
+
+jobs:
+  render:
+    name: Render and publish profile.gif
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write # force-push profile.gif and state.json to the living-output branch
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up uv and Python
+        uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          version: "0.12.23"
+          python-version: "3.12"
+          enable-cache: false
+
+      - name: Read the last state from the living-output branch
+        run: |
+          mkdir -p previous
+          if git fetch --no-tags --depth=1 origin living-output; then
+            echo "PREVIOUS_TREE=$(git rev-parse 'FETCH_HEAD^{tree}')" >> "$GITHUB_ENV"
+            git show FETCH_HEAD:state.json > previous/state.json 2>/dev/null || rm -f previous/state.json
+          fi
+
+      - name: Test
+        run: uv run living/test.py
+
+      - name: Build
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          # Optional; the default metric does not need it. See living/README.md.
+          LIVING_README_TOKEN: ${{ secrets.LIVING_README_TOKEN }}
+        run: >-
+          uv run living/build.py
+          --state-in previous/state.json
+          --state-out out/state.json
+          --out out/profile.gif
+
+      - name: Publish to the living-output branch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          if [ ! -f out/profile.gif ]; then
+            echo "Nothing was built (no layers yet)."
+            exit 0
+          fi
+          gif=$(git hash-object -w out/profile.gif)
+          state=$(git hash-object -w out/state.json)
+          tree=$(printf '100644 blob %s\tprofile.gif\n100644 blob %s\tstate.json\n' "$gif" "$state" | git mktree)
+          if [ "$tree" = "${PREVIOUS_TREE:-}" ]; then
+            echo "profile.gif and state.json are unchanged; not pushing."
+            exit 0
+          fi
+          commit=$(git commit-tree "$tree" -m "chore(living): update profile.gif")
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            "$commit:refs/heads/living-output"

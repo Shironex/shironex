@@ -1,0 +1,216 @@
+{
+ "size": [
+  160,
+  90
+ ],
+ "frameDurationsMs": [
+  150,
+  110,
+  130,
+  110,
+  170,
+  110,
+  130,
+  110,
+  160,
+  120
+ ],
+ "layerOrder": [
+  "sky",
+  "stars",
+  "moon",
+  "base",
+  "screen",
+  "screenText",
+  "cursor",
+  "note",
+  "noteText"
+ ],
+ "files": {
+  "base": "base_f{NN}.png",
+  "sky": "sky_{sky}.png",
+  "stars": "stars_f{NN}.png",
+  "moon": "moon_{phase}.png",
+  "screen": "screen_blank_f{NN}.png",
+  "note": "note_blank.png",
+  "fontText": [
+   "font_tiny.png",
+   "font_tiny.json"
+  ],
+  "fontNote": [
+   "font_digits.png",
+   "font_digits.json"
+  ]
+ },
+ "skies": [
+  "night",
+  "dawn",
+  "day",
+  "dusk"
+ ],
+ "moonPhases": [
+  "new",
+  "waxing_crescent",
+  "first_quarter",
+  "waxing_gibbous",
+  "full",
+  "waning_gibbous",
+  "last_quarter",
+  "waning_crescent"
+ ],
+ "moonPhaseRule": "age = days since new moon / 29.530588; index = floor(age * 8 + 0.5) % 8 into moonPhases (waxing = lit on the right, northern hemisphere)",
+ "windowRect": [
+  1,
+  1,
+  29,
+  44
+ ],
+ "moonRect": [
+  19,
+  5,
+  9,
+  9
+ ],
+ "screenRect": [
+  90,
+  27,
+  42,
+  32
+ ],
+ "noteRect": [
+  137,
+  46,
+  16,
+  12
+ ],
+ "screenText": {
+  "rect": [
+   91,
+   29,
+   40,
+   30
+  ],
+  "lines": 5,
+  "lineHeight": 6,
+  "color": "#8fe0cf",
+  "prefix": "> ",
+  "prefixColor": "#f0c070",
+  "cursorColor": "#d8fff2",
+  "cursorSize": [
+   3,
+   5
+  ],
+  "cursorBlinkFrames": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "font": "font_tiny",
+  "wrap": "words; a word wider than the line breaks at a character; the cursor sits 1 px after the last glyph and must fit on the last line",
+  "overflow": [
+   "full title",
+   "title before the first ': ' (subtitle dropped)",
+   "full title cut on the last line with an ellipsis"
+  ],
+  "ellipsis": "…",
+  "unsupportedCharacters": "fold accents (NFKD), map ‘’ to ', “” to \", –— to -, anything else missing to ?"
+ },
+ "noteText": {
+  "rect": [
+   140,
+   49,
+   11,
+   5
+  ],
+  "color": "#82383a",
+  "align": "center",
+  "font": "font_digits",
+  "maxDigits": 3,
+  "clampTo": 999
+ },
+ "moonVisible": {
+  "night": 1.0,
+  "dawn": 0.5,
+  "day": 0,
+  "dusk": 0.5
+ },
+ "moonFaint": {
+  "appliesBelow": 1.0,
+  "dropColor": "#173a45",
+  "litColor": "#9aa4a8",
+  "rule": "for a value between 0 and 1: drop the unlit disc pixels (#173a45) and paint every other moon pixel #9aa4a8; no alpha blending"
+ },
+ "starsVisible": {
+  "night": true,
+  "dawn": false,
+  "day": false,
+  "dusk": false
+ },
+ "timeOfDayHint": "Europe/Warsaw sun elevation: below -6 deg night; -6 to +6 deg dawn (morning) or dusk (evening); above +6 deg day",
+ "palette": [
+  "#0b1420",
+  "#13253a",
+  "#173a45",
+  "#1f5058",
+  "#2e6e6e",
+  "#4fa3a0",
+  "#8fe0cf",
+  "#d8fff2",
+  "#2a1a1c",
+  "#4a2b25",
+  "#6e4030",
+  "#9a5f3c",
+  "#c98a4a",
+  "#f0c070",
+  "#fff2c8",
+  "#82383a",
+  "#c86848",
+  "#f0a068",
+  "#f2b07a",
+  "#a8604c",
+  "#d89070",
+  "#f0b890",
+  "#94584a",
+  "#b27868",
+  "#c23a3a",
+  "#7a1e2a",
+  "#e8e4dc",
+  "#9aa4a8",
+  "#3b3040",
+  "#5a5e8c",
+  "#3a6ac8",
+  "#3a9a4a",
+  "#c48470",
+  "#e2a684",
+  "#5f8fce",
+  "#8fb9de"
+ ],
+ "source": {
+  "aseprite": "../portrait-living.aseprite",
+  "base": [
+   "room",
+   "monitor",
+   "lamp",
+   "desk_items",
+   "cube",
+   "chair",
+   "body",
+   "head",
+   "hands",
+   "notes"
+  ],
+  "sky": "sky_<name>",
+  "stars": "stars",
+  "moon": "moon_<phase>",
+  "screen": "screen_blank",
+  "note": "note",
+  "fontText": "font_tiny (crop 0,0,96,42)",
+  "fontNote": "font_digits (crop 0,50,40,5)",
+  "v11Screen": [
+   "screen_old",
+   "screen_old_anim"
+  ]
+ }
+}

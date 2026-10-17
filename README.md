@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/pixel/profile.gif" width="640" alt="Pixel art of me at my desk at night: headphones on, code on the monitor, a Rubik's cube on the desk and a 450SR poster on the wall">
+  <img src="https://raw.githubusercontent.com/Shironex/shironex/living-output/profile.gif" width="640" alt="Pixel art of me at my desk: headphones on, my latest blog post on the monitor, the real sky in the window, a Rubik's cube on the desk and a 450SR poster on the wall">
 </p>
 
 <p align="center">

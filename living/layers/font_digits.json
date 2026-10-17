@@ -1,0 +1,81 @@
+{
+ "name": "digits",
+ "image": "font_digits.png",
+ "cellHeight": 5,
+ "lineHeight": 5,
+ "letterSpacing": 1,
+ "inkColor": "#82383a",
+ "ink": "every opaque pixel is ink; recolour it to the colour in layout.json",
+ "glyphs": {
+  "0": {
+   "x": 0,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  },
+  "1": {
+   "x": 4,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  },
+  "2": {
+   "x": 8,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  },
+  "3": {
+   "x": 12,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  },
+  "4": {
+   "x": 16,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  },
+  "5": {
+   "x": 20,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  },
+  "6": {
+   "x": 24,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  },
+  "7": {
+   "x": 28,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  },
+  "8": {
+   "x": 32,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  },
+  "9": {
+   "x": 36,
+   "y": 0,
+   "w": 3,
+   "h": 5,
+   "advance": 4
+  }
+ }
+}
