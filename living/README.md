@@ -7,8 +7,8 @@ The portrait at the top of the profile README is rebuilt every hour by
 - the **monitor** shows the newest [shirone.blog](https://shirone.blog/rss.xml) post title with a blinking cursor;
 - the **sticky note** shows my GitHub contributions today.
 
-The art is drawn once in Aseprite and exported as flat PNG layers into `living/layers/` (the contract lives with
-the art, in `aseprite-demo/living/CONTRACT.md`). `build.py` stacks the layers, draws the text with the pixel font,
+The art is drawn once in Aseprite and exported as flat PNG layers into `living/layers/` (see [Layers](#layers)).
+`build.py` stacks the layers, draws the text with the pixel font,
 and writes `profile.gif` at 4x. The Action force-pushes it, with a small `state.json`, to the `living-output` branch as a
 single commit, only when the bytes change. The README links
 `https://raw.githubusercontent.com/Shironex/shironex/living-output/profile.gif`; raw.githubusercontent.com and GitHub's
@@ -76,6 +76,9 @@ Edit the `cron` line in `.github/workflows/living-readme.yml` (UTC, minutes off 
 scheduled runs queue up). GitHub turns off scheduled workflows in a public repository after 60 days without
 activity in it; if that happens, turn it back on in the Actions tab or push a commit.
 
+If the Actions tab shows only manual runs and no `schedule` runs for a few hours, GitHub has not registered the
+cron. Any commit pushed to `main` re-syncs it; a manual run in the meantime keeps the picture fresh.
+
 ## Fonts
 
 `font_tiny.json` (the screen) and `font_digits.json` (the note) describe a glyph atlas:
@@ -87,3 +90,23 @@ activity in it; if that happens, turn it back on in the Actions tab or push a co
 Per glyph: `x`, `y`, `w` (or `width`), optional `h`, `advance` (default `w + 1`) and `yOffset`. Glyph pixels are the
 atlas pixels with alpha 128 or more, drawn in the layout's colour. Missing letters fall back to the other case, then
 `?`; curly quotes, dashes and accents in titles are folded to plain ASCII first.
+
+## Layers
+
+Everything in `living/layers/` is 160x90, 1x, exact palette colours, transparent where nothing is drawn. They are
+exported once from a copy of the portrait in Aseprite; the CI never runs Aseprite.
+
+| Files | Content |
+|---|---|
+| `base_f01.png` .. `base_f10.png` | the room on each frame, without the window interior, the screen content and the note text |
+| `sky_night.png`, `sky_dawn.png`, `sky_day.png`, `sky_dusk.png` | the window interior |
+| `stars_f01.png` .. `stars_f10.png` | the night stars with their twinkle |
+| `moon_<phase>.png` | the moon in each of the 8 phases, at one fixed spot |
+| `screen_blank_f01.png` .. `screen_blank_f10.png` | the monitor with its glow and no text |
+| `note_blank.png` | the sticky note without its number |
+| `font_tiny.png` / `.json`, `font_digits.png` / `.json` | the glyph atlases (see [Fonts](#fonts)) |
+| `layout.json` | frame durations, layer order, the text and note rectangles, colours, and which layers show per sky |
+
+`build.py` stacks them in `layout.json`'s `layerOrder` (sky, stars, moon, base, screen, screen text, cursor, note,
+note text). To change the art, edit the Aseprite copy, re-export the same file names and run the tests: they
+check the layer sizes, the palette and the frame timings.
