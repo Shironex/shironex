@@ -47,6 +47,27 @@ Guardrails for codebases where AI agents write a lot of the code. 13 packages wi
 pnpm add -D @noctcore/eslint-plugin-security @noctcore/eslint-plugin-async-safety @noctcore/eslint-plugin-prisma
 ```
 
+<img align="left" src="assets/pixel/icon-stackward.gif" width="80" height="64" alt="">
+
+**[stackward](https://github.com/Shironex/stackward)** · [docs](https://shironex.github.io/stackward/)  
+Audits a self-hosted VPS the way I wish someone had audited mine: SSH, firewall, Docker, Coolify or Dokploy, Cloudflare Tunnel, Tailscale and CrowdSec, 104 checks, each with a plain explanation and a fix. A single Go binary that is read only by design (it locks itself down with Landlock so it cannot write to the host), with signed releases. Next up: plan and apply with automatic rollback, so a firewall change can never lock you out.
+
+<br clear="left">
+
+<img align="left" src="assets/pixel/icon-hinomi.gif" width="80" height="64" alt="">
+
+**[Hinomi](https://github.com/Shironex/hinomi)**  
+A small self-hosted app that tells you whether anything deployed and reachable is exposed to a serious vulnerability. It joins what Coolify actually runs with GitHub and OSV advisories, skips the noise, and hands you a fix plan. Named after the fire lookout towers of old Japanese towns: the watchman didn't watch every house, he looked for real smoke.
+
+<br clear="left">
+
+<img align="left" src="assets/pixel/icon-maquette.gif" width="80" height="64" alt="">
+
+**[Maquette](https://github.com/Shironex/maquette)** · [site](https://shironex.github.io/maquette/)  
+A desktop studio that takes an asset from concept art to a small, compressed 3D model in a website or game repo. Blender does the heavy lifting headless, and triangles, texture memory and transfer size sit next to the model the whole way. AI agents can drive it over MCP. Early development, built in the open.
+
+<br clear="left">
+
 <img align="left" src="assets/pixel/icon-shiranami.gif" width="80" height="64" alt="">
 
 **[Shiranami](https://github.com/Shironex/shiranami)** · [shiranami.app](https://shiranami.app)  
