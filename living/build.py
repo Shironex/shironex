@@ -9,7 +9,7 @@
     uv run living/build.py --now 2026-12-24T22:00 --offline
 
 Live data: the Warsaw sky and moon phase for --now (default: the current time),
-the newest shirone.blog title, and GitHub contributions today. Every input has
+the newest blog.shirone.dev title, and GitHub contributions today. Every input has
 an override flag, and the state file keeps the last good title and number so a
 failing feed or API never fails the build.
 """
@@ -37,9 +37,9 @@ from solar import SKIES, time_of_day  # noqa: E402
 
 TZ = ZoneInfo("Europe/Warsaw")
 LATITUDE, LONGITUDE = 52.2297, 21.0122  # Warsaw
-FEED_URL = "https://shirone.blog/rss.xml"
+FEED_URL = "https://blog.shirone.dev/rss.xml"
 GITHUB_LOGIN = "Shironex"
-DEFAULT_TITLE = "shirone.blog"
+DEFAULT_TITLE = "blog.shirone.dev"
 SCALE = 4
 
 
@@ -113,7 +113,7 @@ def parse_args(argv: list[str] | None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     p.add_argument("--sky", choices=SKIES, help="window sky (default: from --now in Warsaw)")
     p.add_argument("--moon", choices=PHASES, help="moon phase (default: from --now)")
-    p.add_argument("--title", help="monitor text (default: newest shirone.blog title)")
+    p.add_argument("--title", help="monitor text (default: newest blog.shirone.dev title)")
     p.add_argument("--number", type=int, help="sticky note number, clamped to 0..999 (default: contributions today)")
     p.add_argument("--now", help="ISO time to render, e.g. 2026-12-24T22:00 (Warsaw time unless it has an offset)")
     p.add_argument("--out", type=Path, default=HERE / "out" / "profile.gif", help="where to write the GIF")

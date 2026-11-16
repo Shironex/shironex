@@ -1,6 +1,6 @@
 """The latest post title from an RSS 2.0 or Atom feed.
 
-The shirone.blog feed is not sorted by date, so the newest entry is picked by
+The blog.shirone.dev feed is not sorted by date, so the newest entry is picked by
 its date. Entries with the same date go to the one listed last; entries
 without a readable date rank below dated ones.
 """
