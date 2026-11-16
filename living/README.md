@@ -4,7 +4,7 @@ The portrait at the top of the profile README is rebuilt every hour by
 `.github/workflows/living-readme.yml`:
 
 - the **window** shows the time of day in Warsaw (night, dawn, day or dusk) and, at night, the real moon phase;
-- the **monitor** shows the newest [shirone.blog](https://shirone.blog/rss.xml) post title with a blinking cursor;
+- the **monitor** shows the newest [blog.shirone.dev](https://blog.shirone.dev/rss.xml) post title with a blinking cursor;
 - the **sticky note** shows my GitHub contributions today.
 
 The art is drawn once in Aseprite and exported as flat PNG layers into `living/layers/` (see [Layers](#layers)).
@@ -38,7 +38,7 @@ Flags: `--sky night|dawn|day|dusk`, `--moon <phase>`, `--title`, `--number`, `--
 |---|---|---|
 | Sky | Sun elevation for Warsaw (NOAA solar calculator equations, `solar.py`) | none needed |
 | Moon | Mean synodic month from the 2000-01-06 new moon, in eighths (`moonphase.py`) | none needed |
-| Title | Newest item of `https://shirone.blog/rss.xml` by `pubDate` (`blogfeed.py`) | last title in `state.json` |
+| Title | Newest item of `https://blog.shirone.dev/rss.xml` by `pubDate` (`blogfeed.py`) | last title in `state.json` |
 | Number | GitHub contribution calendar, today's Warsaw date (`activity.py`) | today's number in `state.json`, else 0 |
 
 Sky boundaries: **night** below -6 degrees (civil twilight); **dawn** from civil dawn until 45 minutes after

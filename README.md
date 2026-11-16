@@ -14,7 +14,7 @@ I ship them properly: CI, tests, releases, docs, and upgrades users don't have t
 
 **Open to:** full-time remote roles · contracts & MVPs  
 **Languages:** Polish (native) · English (C1)  
-**Reach me:** <support@shirone.dev> · [shirone.dev](https://shirone.dev) · [shirone.blog](https://shirone.blog) · [Discord](https://discordapp.com/users/705891140049829908)
+**Reach me:** <support@shirone.dev> · [shirone.dev](https://shirone.dev) · [blog.shirone.dev](https://blog.shirone.dev) · [Discord](https://discordapp.com/users/705891140049829908)
 
 ---
 
@@ -71,7 +71,7 @@ A desktop studio that takes an asset from concept art to a small, compressed 3D 
 <img align="left" src="assets/pixel/icon-shiranami.gif" width="80" height="64" alt="">
 
 **[Shiranami](https://github.com/Shironex/shiranami)** · [shiranami.app](https://shiranami.app)  
-Local-first music player for the files you already own. v2 is a ground-up rewrite from Electron to Rust + Tauri, shipped without stranding a single user's library: Windows installer 110 MB → 12.5 MB, idle RAM ~688 MB → ~291 MB, 189 ms cold boot, 1,500+ Rust tests. [How the rewrite went →](https://shirone.blog/blog/shiranami-v2-rust-rewrite/)
+Local-first music player for the files you already own. v2 is a ground-up rewrite from Electron to Rust + Tauri, shipped without stranding a single user's library: Windows installer 110 MB → 12.5 MB, idle RAM ~688 MB → ~291 MB, 189 ms cold boot, 1,500+ Rust tests. [How the rewrite went →](https://blog.shirone.dev/blog/shiranami-v2-rust-rewrite/)
 
 <br clear="left">
 
@@ -99,15 +99,15 @@ My portfolio as a desktop OS in the browser: draggable windows, ⌘K command pal
 ---
 
 <p align="center">
-  <a href="https://shirone.blog"><img src="assets/pixel/header-writing.gif" width="640" alt="Recent writing, on shirone.blog"></a>
+  <a href="https://blog.shirone.dev"><img src="assets/pixel/header-writing.gif" width="640" alt="Recent writing, on blog.shirone.dev"></a>
 </p>
 
 <img align="right" src="assets/pixel/minime-type.gif" width="128" height="128" alt="Pixel me typing">
 
-- [Swapping the Engine Mid-Flight: Shiranami 2 and a 186k-Line Merge](https://shirone.blog/blog/shiranami-v2-rust-rewrite/)
-- [Green Is Not Evidence: How I Keep AI-Written Code Honest](https://shirone.blog/blog/green-is-not-evidence/)
-- [Taming 12 Terminals: How I Stopped the UI from Freezing](https://shirone.blog/blog/terminal-performance-at-scale/)
-- [The asar Trap: When Your AI Agent Works in Dev but Dies in Production](https://shirone.blog/blog/electron-asar-trap/)
+- [Swapping the Engine Mid-Flight: Shiranami 2 and a 186k-Line Merge](https://blog.shirone.dev/blog/shiranami-v2-rust-rewrite/)
+- [Green Is Not Evidence: How I Keep AI-Written Code Honest](https://blog.shirone.dev/blog/green-is-not-evidence/)
+- [Taming 12 Terminals: How I Stopped the UI from Freezing](https://blog.shirone.dev/blog/terminal-performance-at-scale/)
+- [The asar Trap: When Your AI Agent Works in Dev but Dies in Production](https://blog.shirone.dev/blog/electron-asar-trap/)
 
 Field notes from building desktop apps and AI dev tooling: decisions, mistakes, and lessons learned in production. No tutorials.
 

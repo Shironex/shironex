@@ -5,8 +5,8 @@ import urllib.error
 
 from blogfeed import latest_title, parse_latest_title
 
-# The shape of https://shirone.blog/rss.xml: items in slug order, not by date, and two posts on one day.
-SHIRONE_RSS = b"""<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>shirone.blog</title>
+# The shape of https://blog.shirone.dev/rss.xml: items in slug order, not by date, and two posts on one day.
+SHIRONE_RSS = b"""<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>blog.shirone.dev</title>
 <item><title>Building an Activity Feed Without Opening a Single Port</title><pubDate>Mon, 16 Mar 2026 12:00:00 GMT</pubDate></item>
 <item><title>Green Is Not Evidence: How I Keep AI-Written Code Honest</title><pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate></item>
 <item><title>Hello, World</title><pubDate>Tue, 10 Mar 2026 00:00:00 GMT</pubDate></item>
